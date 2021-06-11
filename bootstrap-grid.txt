@@ -1,0 +1,91 @@
+
+BOOTSTRAP GRID SYSTEM
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/style.css" />
+  </head>
+  <body>
+    <div class="container p50">
+      <h1>Welcome to my page</h1>
+      <p>let's learn bootstrap</p>
+      <!-- layouts -->
+      <div class="grid-layouts container text-center">
+        <!-- 12column grid -->
+        <div class="row">
+          <div class="col-sm bg">[logo]</div>
+          <div class="col-sm bg">
+            <ol>
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ol>
+          </div>
+          <div class="col-sm bg">
+            <button>login now</button>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="row align-items-center" style="height: 200px">
+          <!-- try the above line with aLign-items-start/align-items-end -->
+          <div class="col-sm-2 bg">left side bar</div>
+          <div class="col-sm bg">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </div>
+          <div class="row">
+            <div class="col-sm bg">footer info</div>
+          </div>
+        </div>
+        <!-- end layout -->
+        <div class="row" style="height: 200px">
+          <!-- start justify-content-center ,end between around try above line -->
+          <div class="col-sm-3 bg">.col-3</div>
+          <div class="col-sm-3 bg">.col-4</div>
+          <!-- align-self-center can also be used to the above kinda lines -->
+          <!-- you can also use col-3 offset-3 or offset-2 lyk tat to abve kind of lines -->
+          <div class="col-sm-3 bg">.col-5</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/bootstrap-5.0.1-dist/js/jquery.min.js"></script>
+    <script src="assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+ ------------------------------------------------------------------------------ 
+  STYLE.CSS 
+
+body {
+  background-color: rgb(156, 201, 240);
+}
+div.container {
+  background-color: rgb(245, 137, 203);
+}
+.bg {
+  padding: 10px;
+  background-color: grey;
+  border: 1px solid rgb(112, 89, 89);
+}
+.p50 {
+  padding: 50px;
+}
+ol > li {
+  display: inline;
+  padding-right: 10px;
+}
+.grid-layouts.container {
+  border: 1px solid rgb(230, 21, 21);
+}
